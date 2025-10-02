@@ -19,6 +19,7 @@ public class Jurnal01 {
         System.out.println(lembar1000);
         System.out.println(sisa);
 
+
         input.close();
     }
 }
