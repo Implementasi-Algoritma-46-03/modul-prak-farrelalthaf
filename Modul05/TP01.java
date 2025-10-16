@@ -14,7 +14,7 @@ public class TP01 {
                 System.out.println("janvier");
                 break;
             case "februari":
-                System.out.println("février");
+                System.out.println("fevrier");
                 break;
             case "maret":
                 System.out.println("mars");
@@ -32,7 +32,7 @@ public class TP01 {
                 System.out.println("juillet");
                 break;
             case "agustus":
-                System.out.println("août");
+                System.out.println("aout");
                 break;
             case "september":
                 System.out.println("septembre");
@@ -44,7 +44,7 @@ public class TP01 {
                 System.out.println("novembre");
                 break;
             case "desember":
-                System.out.println("décembre");
+                System.out.println("decembre");
                 break;
             }
     }
