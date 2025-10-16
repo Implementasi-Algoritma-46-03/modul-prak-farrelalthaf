@@ -1,8 +1,8 @@
 ## Identitas
 
-Nama: Pasya Muhammad Rizky
+Nama: Farrel Althaf An-Nasai
 
-NIM : 607062500047
+NIM : 607062500033
 
 ## Instruksi
 

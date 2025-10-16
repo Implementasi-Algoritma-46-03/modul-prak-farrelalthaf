@@ -1,48 +1,46 @@
 import java.util.Scanner;
-public class TP02 {
-
-    public static void main(final String[] args) {
-         Scanner scanner = new Scanner(System.in);
-        int totalTransaksi = scanner.nextInt();
-
-        double jumlahDiskon = 0.0;
-        if (totalTransaksi > 200000) {
-            jumlahDiskon = 0.05 * totalTransaksi;
-        }
-
-        double totalSetelahDiskon = totalTransaksi - jumlahDiskon;
-        double pajakPpn = 0.11 * totalSetelahDiskon;
-        double totalPembayaran = totalSetelahDiskon + pajakPpn;
-
-        System.out.println("Transaksi = " + totalTransaksi);
-        System.out.println("Total = " + totalTransaksi + " - " + jumlahDiskon);
-        System.out.println("Ppn 11% = " + pajakPpn);
-        System.out.println("Total dibayar = " + totalPembayaran);
-
-        scanner.close();
 
 public class TP02 {
 
     public static void main(final String[] args) {
-        Scanner n = new Scanner(System.in);
-        int harga = n.nextInt();
+        // Kerjakan soalnya di sini
+        Scanner input = new Scanner(System.in);
+
+        // input bilangan bulat N
+        int  bilanganBulatN = input.nextInt();
+
+        // variabel double untuk perhitungan desimal
         double diskon = 0;
+        double totalSetelahDiskon;
+        double pajak;
+        double totalDibayar;
 
-        if (harga >= 200000) {
-            diskon = harga * 0.05;
+        // jika transaksi lebih dari 200000, maka diskon 5%
+        if (bilanganBulatN > 200000) {
+            diskon = bilanganBulatN * 0.05;
         }
 
-        double total = harga - diskon;
-        double pajak = total * 0.11;
-        double totalBayar = total + pajak;
+        // total setelah di diskon
+        totalSetelahDiskon = bilanganBulatN - diskon;
 
-        System.out.println("Transaksi = " + harga);
+        // hitung pajak setelah di diskon
+        pajak = totalSetelahDiskon * 0.11;
+
+        // total akhir
+        totalDibayar = totalSetelahDiskon + pajak;
+
+        // hasil tampilan
+        System.out.println("Transaksi = " + bilanganBulatN);
         if (diskon > 0) {
-            System.out.printf("Total = %.0f%s%.0f%n", (double) harga, " - ", diskon);
+            // baris ini hanya berjalan jika ada diskon
+            System.out.println("Total = " + bilanganBulatN + " - " + (int)diskon);
         } else {
-            System.out.printf("Total = %.0f%n", (double) harga);
+            // baris ini hanya berjalan jika tidak ada diskon
+            System.out.println("Total = " + bilanganBulatN);
         }
-        System.out.printf("Ppn 11%% = %.1f%n", pajak);
-        System.out.printf("Total dibayar = %.1f%n", totalBayar);
+        System.out.println("Ppn 11% = " + pajak);
+        System.out.println("Total dibayar = " + totalDibayar);
+
+        input.close();
     }
 }

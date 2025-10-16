@@ -1,31 +1,25 @@
 import java.util.Scanner;
+
 public class TP03 {
 
     public static void main(final String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int nilaiDira = scanner.nextInt();
-        int nilaiRadi = scanner.nextInt();
-        int nilaiIdar = scanner.nextInt();
+        // Kerjakan soalnya di sini
+        Scanner input = new Scanner(System.in);
 
-        if (nilaiDira > nilaiRadi && nilaiDira > nilaiIdar) {
+        // input 3 buah bilangan bulat
+        int nilaiD = input.nextInt();
+        int nilaiR = input.nextInt();
+        int nilaiI = input.nextInt();
+
+        // nilai tertinggi
+        if (nilaiD > nilaiR && nilaiD > nilaiI) {
             System.out.println("Dira");
-        } else if (nilaiRadi > nilaiDira && nilaiRadi > nilaiIdar) {
+        } else if (nilaiR > nilaiD && nilaiR > nilaiI) {
             System.out.println("Radi");
         } else {
             System.out.println("Idar");
         }
-
-        scanner.close();
-        Scanner s = new Scanner(System.in);
-        int d = s.nextInt();
-        int r = s.nextInt();
-        int i = s.nextInt();
-
-        if (d > r && d > i)
-            System.out.println("Dira");
-        else if (r > d && r > i)
-            System.out.println("Radi");
-        else
-            System.out.println("Idar");
+        
+        input.close();
     }
 }
