@@ -38,7 +38,7 @@ public class TP01 {
                 System.out.println("septembre");
                 break;
             case "oktober":
-                System.out.println("octobre");
+                System.out.println("oktobre");
                 break;
             case "november":
                 System.out.println("novembre");

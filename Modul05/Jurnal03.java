@@ -23,15 +23,9 @@ public class Jurnal03 {
                 break;
             case '/':
                 total = angka1 / angka2;
+                System.out.printf("%.7f%n", (double) angka1 / angka2);
             default:
                 break;
         }
-        if (c == '/'){
-            System.out.println(total);
-        }else{
-            System.out.println((int) total);
-        }
-
-
     }
 }
