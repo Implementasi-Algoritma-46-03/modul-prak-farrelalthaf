@@ -33,8 +33,8 @@ public class TP01 {
         double r3 = fahrenheitToReamur(f3);
 
         // Output hasil dari konversi dengan dua angka dibelakang koma
-        System.out.printf("Celcius: %.2f %.2f %.2f\n", c1, c2, c3);
-        System.out.printf("Reamur: %.2f %.2f %.2f\n", r1, r2, r3);
+        System.out.printf("Celcius: %.1f %.1f %.1f%n", c1, c2, c3);
+        System.out.printf("Reamur: %.2f %.2f %.2f%n", r1, r2, r3);
 
         input.close();
     }
