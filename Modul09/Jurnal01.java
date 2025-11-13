@@ -8,8 +8,5 @@ public class Jurnal01 {
            int hasil = i * i;
            System.out.print(hasil + " ");
         }
-
-        // Menutup Scanner
-        input.close();
     }
 }
