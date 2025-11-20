@@ -10,7 +10,11 @@ public class Jurnal01 {
             }
             // Nested For untuk membuat kolom
             for (int j = 1; j <= 5; j++) {
-                System.out.print(i + " ");
+                System.out.print(i);
+                // Mengecek kondisi untuk menghilangkan spasi di akhir kalimat
+                if (j < 5) {
+                    System.out.print(" ");
+                } 
             }
 
             // Menampilkan hasil
