@@ -16,7 +16,7 @@ public class Jurnal03 {
         for (int i = 1; i <= n; i++) {
             // Nested For untuk membuat kolom dan membuat isi kolom seperti di output soal
             for (int j = 1; j <= n - (i - 1); j++) {
-                System.out.print(bilanganSaatIni + " ");
+                System.out.print(bilanganSaatIni);
                 bilanganSaatIni = (bilanganSaatIni + 1) % 10;
             }
 
