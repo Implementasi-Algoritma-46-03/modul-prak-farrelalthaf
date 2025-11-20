@@ -1,8 +1,8 @@
 ## Identitas
 
-Nama: 
+Nama: Farrel Althaf An-Nasai
 
-NIM : 
+NIM : 607062500033
 
 ## Instruksi
 
