@@ -4,15 +4,15 @@ import java.util.Collections;
 
 public class TP02 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        if (!input.hasNextInt()) return;          // Tidak ada input sama sekali
-        int N = input.nextInt();
+        Scanner s = new Scanner(System.in);
+        if (!s.hasNextInt()) return;          // tidak ada input sama sekali
+        int N = s.nextInt();
         Integer[] poin = new Integer[N];
         int count = 0;
-        while (count < N && input.hasNextInt()) { // Baca sampai N atau sampai input habis
-            poin[count++] = input.nextInt();
+        while (count < N && s.hasNextInt()) { // baca sampai N atau sampai input habis
+            poin[count++] = s.nextInt();
         }
-        // Jika input kurang dari N, isi sisa dengan 0 (atau keputusan lain sesuai soal)
+        // jika input kurang dari N, isi sisa dengan 0 (atau keputusan lain sesuai soal)
         for (int i = count; i < N; i++) poin[i] = 0;
 
         Arrays.sort(poin, Collections.reverseOrder());
@@ -21,6 +21,6 @@ public class TP02 {
             System.out.print(poin[i]);
             if (i < N - 1) System.out.print(" ");
         }
-        input.close();
+        s.close();
     }
 }
