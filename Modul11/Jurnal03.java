@@ -34,7 +34,7 @@ public class Jurnal03 {
                 }
             }
 
-            // Mengek kondisi
+            // Mengecek kondisi
             if (counter > hasilAkhir || (counter == hasilAkhir && arr.get(i) > modus)) {
                 hasilAkhir = counter;
                 modus = arr.get(i);
