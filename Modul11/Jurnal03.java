@@ -24,10 +24,10 @@ public class Jurnal03 {
         } while (a != -1);
 
         // For Loop
-        for (int i=0; i<arr.size(); i++) {
+        for (int i = 0; i<arr.size(); i++) {
             counter = 0;
             // Nested For
-            for (int j=0; j<arr.size(); j++) {
+            for (int j = 0; j<arr.size(); j++) {
                 // Mengecek kondisi
                 if (arr.get(i).equals(arr.get(j))){
                     counter++;
