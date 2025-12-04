@@ -22,7 +22,9 @@ public class Jurnal01 {
         // Nested For untuk mencerminkan matriks
         for (int i = bilanganBulatN - 1; i >= 0; i--) {
             for (int j = 0; j < bilanganBulatN; j++) {
-                System.out.print(matriks[i][j] + " "); 
+                System.out.print(matriks[i][j]); 
+                if (j < bilanganBulatN - 1)
+                System.out.print(" "); 
             }
 
             System.out.println();
