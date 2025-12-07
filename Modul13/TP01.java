@@ -1,11 +1,10 @@
 import java.util.Scanner;
-import java.util.Locale;
 
 public class TP01 {
 
     public static void main(final String[] args) {
         // Kerjakan soalnya di sini
-        Scanner input = new Scanner(System.in).useLocale(Locale.US);
+        Scanner input = new Scanner(System.in);
 
         // Buat Array
         double[] gelombang1 = new double[10];
@@ -28,8 +27,9 @@ public class TP01 {
         // Output
         // Cetak gelombang1
         for (int i = 0; i < 10; i++) {
+            System.out.printf("%.2f", gelombang1[i]);
             if (i < 9) {
-                System.out.printf("%.2f ", gelombang1[i]);
+                System.out.printf(" ");
             }
         }
 
@@ -37,8 +37,9 @@ public class TP01 {
 
         // Cetak gelombang2
         for (int i = 0; i < 10; i++) {
+            System.out.printf("%.2f", gelombang2[i]);
             if (i < 9) {
-                System.out.printf("%.2f ", gelombang2[i]);
+                System.out.printf(" ");
             }
         }
 
