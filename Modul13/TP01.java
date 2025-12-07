@@ -28,6 +28,9 @@ public class TP01 {
         // Cetak gelombang1
         for (int i = 0; i < 10; i++) {
             System.out.printf("%.2f ", gelombang1[i]);
+            if (i < 9) {
+                System.out.print(" ");
+            }
         }
 
         System.out.println();
@@ -35,6 +38,9 @@ public class TP01 {
         // Cetak gelombang2
         for (int i = 0; i < 10; i++) {
             System.out.printf("%.2f ", gelombang2[i]);
+            if (i < 9) {
+                System.out.print(" ");
+            }
         }
 
         System.out.println();
